@@ -246,7 +246,7 @@ class _ListaFeedbackPageState extends State<ListaFeedbackPage> {
           quantidade,
           textAlign: TextAlign.left,
           style: TextStyle(
-            fontSize: 16,
+            fontSize: 18,
             color: kPrimaryColor,
           ),
         ),
