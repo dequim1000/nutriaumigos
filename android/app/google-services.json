@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1093807891469",
+    "project_id": "nutriaumigos-7b3d0",
+    "storage_bucket": "nutriaumigos-7b3d0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1093807891469:android:6f0be19a4cb344bae8e144",
+        "android_client_info": {
+          "package_name": "com.example.nutriaumigos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1093807891469-v4816o2arl946c133b6ng69thsg0bibl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFYGK1ZBgPaktBIdXTauqlbiIX6Dkma5Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1093807891469-v4816o2arl946c133b6ng69thsg0bibl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
