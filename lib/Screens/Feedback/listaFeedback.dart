@@ -242,70 +242,13 @@ class _ListaFeedbackPageState extends State<ListaFeedbackPage> {
             ),
           ],
         ),
-        trailing: Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(
-              quantidade,
-              textAlign: TextAlign.left,
-              style: TextStyle(
-                fontSize: 16,
-                color: kPrimaryColor,
-              ),
-            ),
-            const SizedBox(
-              width: 10,
-            ),
-            if (widget.tipoUsuario != 'Clientes' && allData.isNotEmpty)
-              Container(
-                child: TextButton(
-                  child: Image.asset(
-                    'assets/icons/feedback.png',
-                    height: 40,
-                    width: 40,
-                    color: kPrimaryColor,
-                  ),
-                  onPressed: () async {
-                    Navigator.pushNamed(
-                      context,
-                      'replyPage',
-                      arguments: {
-                        'tipoUsuario': widget.tipoUsuario,
-                        'idAlimento': widget.idAlimento,
-                        'idPet': widget.idPet,
-                        'idFeedback': idFeedback,
-                        'stateAlimentacao': widget.stateAlimentacao,
-                        'stateFeedback': widget.stateFeedback,
-                      },
-                    );
-                  },
-                ),
-              ),
-            Container(
-              child: TextButton(
-                child: Image.asset(
-                  'assets/icons/feedback.png',
-                  height: 40,
-                  width: 40,
-                  color: kPrimaryColor,
-                ),
-                onPressed: () async {
-                  Navigator.pushNamed(
-                    context,
-                    'replyPage',
-                    arguments: {
-                      'tipoUsuario': widget.tipoUsuario,
-                      'idAlimento': widget.idAlimento,
-                      'idPet': widget.idPet,
-                      'idFeedback': idFeedback,
-                      'stateAlimentacao': widget.stateAlimentacao,
-                      'stateFeedback': widget.stateFeedback,
-                    },
-                  );
-                },
-              ),
-            ),
-          ],
+        trailing: Text(
+          quantidade,
+          textAlign: TextAlign.left,
+          style: TextStyle(
+            fontSize: 16,
+            color: kPrimaryColor,
+          ),
         ),
         onTap: () {
           Navigator.pushNamed(
