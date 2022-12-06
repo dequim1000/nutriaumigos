@@ -393,12 +393,6 @@ class _AnimaisPageState extends State<AnimaisPage> {
                 style: const TextStyle(
                   fontSize: 20,
                 ),
-                validator: ((value) {
-                  if (value == null || value.isEmpty) {
-                    return 'Preencha o campo de Alergias';
-                  }
-                  return null;
-                }),
               ),
               const SizedBox(
                 height: 10,
@@ -431,12 +425,6 @@ class _AnimaisPageState extends State<AnimaisPage> {
                 style: const TextStyle(
                   fontSize: 20,
                 ),
-                validator: ((value) {
-                  if (value == null || value.isEmpty) {
-                    return 'Preencha o campo de Rejeição';
-                  }
-                  return null;
-                }),
               ),
               const SizedBox(
                 height: 10,
@@ -469,12 +457,6 @@ class _AnimaisPageState extends State<AnimaisPage> {
                 style: const TextStyle(
                   fontSize: 20,
                 ),
-                validator: ((value) {
-                  if (value == null || value.isEmpty) {
-                    return 'Preencha o campo de Problemas';
-                  }
-                  return null;
-                }),
               ),
               const SizedBox(
                 height: 10,
@@ -539,12 +521,6 @@ class _AnimaisPageState extends State<AnimaisPage> {
                 style: const TextStyle(
                   fontSize: 20,
                 ),
-                validator: ((value) {
-                  if (value == null || value.isEmpty) {
-                    return 'Preencha o campo de Descrição';
-                  }
-                  return null;
-                }),
               ),
               const SizedBox(
                 height: 40,
@@ -608,11 +584,11 @@ class _AnimaisPageState extends State<AnimaisPage> {
                                       txtSexo.text,
                                       double.parse(txtIdade.text),
                                       double.parse(txtPeso.text),
-                                      txtAlergias.text,
-                                      txtRejeicao.text,
-                                      txtProblemas.text,
-                                      txtObservacao.text,
-                                      txtDescricao.text,
+                                      txtAlergias.text == '' ? 'Nenhuma': txtAlergias.text,
+                                      txtRejeicao.text == '' ? 'Nenhuma': txtRejeicao.text,
+                                      txtProblemas.text == '' ? 'Nenhuma': txtProblemas.text,
+                                      txtObservacao.text == '' ? 'Nenhuma': txtObservacao.text,
+                                      txtDescricao.text == '' ? 'Nenhuma': txtDescricao.text,
                                       context)
                                   .then(
                                 (value) {
@@ -642,11 +618,11 @@ class _AnimaisPageState extends State<AnimaisPage> {
                                       txtSexo.text,
                                       double.parse(txtIdade.text),
                                       double.parse(txtPeso.text),
-                                      txtAlergias.text,
-                                      txtRejeicao.text,
-                                      txtProblemas.text,
-                                      txtObservacao.text,
-                                      txtDescricao.text,
+                                      txtAlergias.text == '' ? 'Nenhuma': txtAlergias.text,
+                                      txtRejeicao.text == '' ? 'Nenhuma': txtRejeicao.text,
+                                      txtProblemas.text == '' ? 'Nenhuma': txtProblemas.text,
+                                      txtObservacao.text == '' ? 'Nenhuma': txtObservacao.text,
+                                      txtDescricao.text == '' ? 'Nenhuma': txtDescricao.text,
                                       widget.idPet.toString(),
                                       context)
                                   .then(
