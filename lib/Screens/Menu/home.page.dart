@@ -197,8 +197,10 @@ class _HomePageState extends State<HomePage> {
           );
         }
         if (snapshot.connectionState == ConnectionState.done) {
-          return Image.network(
-            snapshot.data.toString(),
+          return Center(
+            child: Image.network(
+              snapshot.data.toString(),
+            ),
           );
         }
         return const Center(child: CircularProgressIndicator());

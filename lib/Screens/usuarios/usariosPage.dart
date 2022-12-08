@@ -315,7 +315,14 @@ class _UsuariosPageState extends State<UsuariosPage> {
             ),
           if (allData.isEmpty && widget.tipoUsuario != 'Clientes')
             Container(
-              child: Text("Você não possui nenhum cliente vinculado!"),
+              height: MediaQuery.of(context).size.height*0.8,
+              child: const Center(
+                child: Text(
+                  "Você não possui nenhum cliente vinculado!",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(color: Colors.white, fontSize: 16),
+                ),
+              ),
             ),
         ],
       ),

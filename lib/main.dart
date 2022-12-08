@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:nutriaumigos/Screens/Alimentacao/alimentacao.dart';
 import 'package:nutriaumigos/Screens/Alimentacao/listaAlimentosPage.dart';
 import 'package:nutriaumigos/Screens/Animais/listaAnimaisPage.dart';
@@ -18,6 +19,8 @@ import 'Screens/Login/login.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
+  SystemChrome.setPreferredOrientations(
+    [DeviceOrientation.portraitUp]);
   runApp(const MyApp());
 }
 
